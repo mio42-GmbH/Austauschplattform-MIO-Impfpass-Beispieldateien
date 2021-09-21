@@ -1,0 +1,69 @@
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="802e8ddf-da94-4d45-9b9a-ef24001dbfd4" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Prime|1.1.0" />
+  </meta>
+  <status value="final" />
+  <type>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="11369-6" />
+      <display value="History of Immunization Narrative" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="urn:uuid:7eb1aef1-a24e-42e0-926d-904470d044dc" />
+  </subject>
+  <date value="2020-07-01" />
+  <author>
+    <reference value="urn:uuid:ebefcfca-7168-40e5-8918-7af38c7f10c9" />
+  </author>
+  <title value="Impfeintrag-/einträge" />
+  <!-- Record  Prime -->
+  <section>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+		<version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+        <code value="713404003" />
+		<display value="Vaccination given (situation)" />
+      </coding>
+    </code>
+    <entry>
+      <reference value="urn:uuid:f9b89c2a-fe63-4a7f-9f4a-1335526b29cb" />
+    </entry>
+  </section>
+  <!-- Observation -->
+  <section>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+		<version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+        <code value="243796009:363589002=121258006" />
+		<display value="Situation with explicit context (situation) : Associated procedure (attribute) = Procedure to identify antibody (procedure)" />
+      </coding>
+    </code>
+    <entry>
+      <reference value="urn:uuid:9629ba34-1c3e-44bf-b71b-084fe3bca00b" />
+    </entry>
+  </section>
+  <!-- Condition -->
+  <section>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+        <code value="161413004:363589002=35123003" />
+		<display value="History of infectious disease (situation) : Associated procedure (attribute) = Active immunity, function (observable entity)" />
+      </coding>
+    </code>
+    <entry>
+      <reference value="urn:uuid:da020cdd-7a43-4e82-9bb6-37845e572a6d" />
+    </entry>
+    <section>
+      <entry>
+        <reference value="urn:uuid:70c4e890-b1fa-4bff-9a04-5d6ac5cbfcf4" />
+      </entry>
+    </section>
+  </section>
+</Composition>

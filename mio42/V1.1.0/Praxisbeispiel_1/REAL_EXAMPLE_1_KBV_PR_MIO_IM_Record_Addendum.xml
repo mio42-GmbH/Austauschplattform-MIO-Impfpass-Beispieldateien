@@ -1,0 +1,88 @@
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="4890c87a-e6f2-4037-9905-aeaff944a3cb" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Addendum|1.1.0" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>TBD</p>
+    </div>
+  </text>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Technical_Entry_Type" />
+        <code value="End" />
+        <display value="Eintrag nur digital" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Attester_Addendum">
+    <extension url="mode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/composition-attestation-mode" />
+          <code value="legal" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="party">
+      <valueReference>
+        <reference value="urn:uuid:0d38b9ea-6125-43d8-a8d5-0ec03fe91996" />
+      </valueReference>
+    </extension>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Enterer">
+    <extension url="mode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+          <code value="ENT" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="party">
+      <valueReference>
+        <reference value="urn:uuid:ebefcfca-7168-40e5-8918-7af38c7f10c9" />
+      </valueReference>
+    </extension>
+  </extension>
+  <status value="completed" />
+  <vaccineCode>
+    <text value="Pockenimpfstoff" />
+  </vaccineCode>
+  <patient>
+    <reference value="urn:uuid:7eb1aef1-a24e-42e0-926d-904470d044dc" />
+  </patient>
+  <occurrenceDateTime value="2019-12-23" />
+  <primarySource value="false" />
+  <reportOrigin>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/immunization-origin" />
+      <code value="recall" />
+    </coding>
+    <text value="Eltern/Patienten Erinnerung" />
+  </reportOrigin>
+  <protocolApplied>
+    <targetDisease>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+        <code value="67924001" />
+        <display value="Smallpox (disorder)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="Pocken" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+    </targetDisease>
+    <doseNumberString>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="unknown" />
+      </extension>
+    </doseNumberString>
+  </protocolApplied>
+</Immunization>

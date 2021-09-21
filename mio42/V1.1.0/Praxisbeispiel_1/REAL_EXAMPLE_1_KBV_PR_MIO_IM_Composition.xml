@@ -1,0 +1,35 @@
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="f692ec79-adec-4cf4-ba53-a4bab7751daa" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Addendum|1.1.0" />
+  </meta>
+  <status value="final" />
+  <type>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="11369-6" />
+      <display value="History of Immunization Narrative" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="urn:uuid:7eb1aef1-a24e-42e0-926d-904470d044dc" />
+  </subject>
+  <date value="2018-07-01T12:30:02Z" />
+  <author>
+    <reference value="urn:uuid:ebefcfca-7168-40e5-8918-7af38c7f10c9" />
+  </author>
+  <title value="Impfeintrag-/einträge Nach-/Übertrag" />
+  <section>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+		<version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+        <code value="713404003" />
+		<display value="Vaccination given (situation)" />
+      </coding>
+    </code>
+    <entry>
+      <reference value="urn:uuid:4890c87a-e6f2-4037-9905-aeaff944a3cb" />
+    </entry>
+  </section>
+</Composition>

@@ -1,0 +1,32 @@
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="70c4e890-b1fa-4bff-9a04-5d6ac5cbfcf4" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Provenance|1.1.0" />
+  </meta>
+  <target>
+    <reference value="urn:uuid:da020cdd-7a43-4e82-9bb6-37845e572a6d" />
+  </target>
+  <recorded value="2019-12-23T08:39:24+10:00" />
+  <agent>
+    <role>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+        <code value="125677006" />
+        <display value="Relative (person)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="Angehöriger" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+    </role>
+    <who>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="unknown" />
+      </extension>
+      <display value="unknown" />
+    </who>
+  </agent>
+</Provenance>

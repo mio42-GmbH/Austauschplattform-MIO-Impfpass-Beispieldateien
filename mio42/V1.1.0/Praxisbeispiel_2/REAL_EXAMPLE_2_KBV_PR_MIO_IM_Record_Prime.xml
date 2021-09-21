@@ -1,0 +1,91 @@
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="f9b89c2a-fe63-4a7f-9f4a-1335526b29cb" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime|1.1.0" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>TBD</p>
+    </div>
+  </text>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Technical_Entry_Type" />
+        <code value="End" />
+        <display value="Eintrag nur digital" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Attester">
+    <extension url="mode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/composition-attestation-mode" />
+          <code value="legal" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="party">
+      <valueReference>
+        <reference value="urn:uuid:ebefcfca-7168-40e5-8918-7af38c7f10c9" />
+      </valueReference>
+    </extension>
+  </extension>
+  <status value="completed" />
+  <vaccineCode>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+      <code value="836385002" />
+	  <display value="Vaccine product containing Yellow fever virus antigen (medicinal product)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="Gelbfieberimpfstoff" />
+            </extension>
+          </extension>
+        </display>
+    </coding>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+	  <version value="atcgm2021" />
+      <code value="J07BL" />
+      <display value="Gelbfieber-Impfstoffe" />
+    </coding>
+    <text value="Gelbfieberimpfstoff" />
+  </vaccineCode>
+  <patient>
+    <reference value="urn:uuid:7eb1aef1-a24e-42e0-926d-904470d044dc" />
+  </patient>
+  <occurrenceDateTime value="2019-12-23" />
+  <primarySource value="true" />
+  <manufacturer>
+    <display value="Beispiel-Pharm" />
+  </manufacturer>
+  <lotNumber value="ABCD123419" />
+  <note>
+    <text value="Bei einer ungewöhnlichen Impfreaktion sollte die impfende ärztliche Person benachrichtigt werden. Die ärztlich tätige Person hat, wenn der Verdacht einer gesundheitlichen Schädigung besteht, die über das übliche Ausmaß einer Impfreaktion hinaus geht verpflichtet, den Verdacht dem zuständigen Gesundheitsamt namentlich zu melden (§ 6 Absatz 1 Nr 3 des lnfektionsschutzgesetzes • lfSG) Im Falle eines Impfschadens besteht unter den Voraussetzungen des § 60 Absatz 1 lfSG ein Anspruch auf Entschädigung in entsprechender Anwendung der Vorschriften des Bundesversorgungsgesetzes. Der Antrag ist bei der für die Durchführung des Bundesversorgungsgesetzes zuständigen Behörde (§ 64 Absatz 1 lfSG, i.d.R. 'Versorgungsamt') zu stellen. Weitere Auskünfte erteilt das zuständige Gesundheitsamt." />
+  </note>
+  <protocolApplied>
+    <targetDisease>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+        <code value="16541001" />
+        <display value="Yellow fever (disorder)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="Gelbfieber" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+    </targetDisease>
+    <doseNumberString>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="unknown" />
+      </extension>
+    </doseNumberString>
+  </protocolApplied>
+</Immunization>

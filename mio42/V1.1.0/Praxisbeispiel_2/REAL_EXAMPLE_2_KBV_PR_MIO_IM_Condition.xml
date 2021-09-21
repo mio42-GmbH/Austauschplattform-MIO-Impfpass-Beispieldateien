@@ -1,0 +1,66 @@
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="da020cdd-7a43-4e82-9bb6-37845e572a6d" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Condition|1.1.0" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>TBD</p>
+    </div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+      <code value="resolved" />
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+      <code value="confirmed" />
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+      <code value="27836007" />
+      <display value="Pertussis (disorder)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Keuchhusten" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
+      <version value="icd10gm2020" />
+      <code value="A37.-" />
+      <display value="Keuchhusten" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:7eb1aef1-a24e-42e0-926d-904470d044dc" />
+  </subject>
+  <onsetString>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Age_Groups">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <version value="http://snomed.info/sct/900000000000207008/version/20200131" />
+          <code value="271872005" />
+          <display value="Old age (qualifier value)">
+            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+              <extension url="content">
+                <valueString value="Old age (qualifier value)" />
+              </extension>
+            </extension>
+          </display>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </onsetString>
+  <recordedDate value="2019-12-23" />
+</Condition>

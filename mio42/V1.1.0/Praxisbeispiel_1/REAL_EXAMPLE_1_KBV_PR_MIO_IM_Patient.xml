@@ -1,0 +1,34 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="7eb1aef1-a24e-42e0-926d-904470d044dc" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Patient: Ludger Königsstein</p>
+    </div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+        <code value="GKV" />
+      </coding>
+    </type>
+    <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+    <value value="P234567890" />
+  </identifier>
+  <name>
+    <use value="official" />
+    <text value="Ludger Königsstein" />
+    <family value="Königsstein">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Königsstein" />
+      </extension>
+    </family>
+    <given value="Ludger" />
+  </name>
+  <gender value="male" />
+  <birthDate value="1935-06-22" />
+</Patient>
