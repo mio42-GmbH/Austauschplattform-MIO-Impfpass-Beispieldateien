@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="67b733fe-39a3-48b9-b206-73ae1a545b6e"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Bundle_Entry|1.1.0"/>
+	</meta>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="67b733fe-39a3-48b9-b206-73ae1a545b6e"/>
+	</identifier>
+	<type value="document"/>
+	<timestamp value="2021-12-07T10:56:26.661Z"/>
+	<entry>
+		<fullUrl value="urn:uuid:0848bc82-261e-4430-9c7a-4eee7799ae77"/>
+		<resource>
+			<Composition>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Addendum|1.1.0"/>
+				</meta>
+				<status value="final"/>
+				<type>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="11369-6"/>
+						<display value="History of Immunization Narrative"/>
+					</coding>
+				</type>
+				<subject>
+					<reference value="urn:uuid:1"/>
+				</subject>
+				<date value="2021-12-07"/>
+				<author>
+					<reference value="urn:uuid:1664be96-8303-4de4-9c4a-fad35593eb06"/>
+				</author>
+				<title value="Impfeintrag-/einträge"/>
+				<section>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+							<code value="713404003"/>
+							<display value="Vaccination given (situation)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:ac5e75d2-0ead-4743-803e-2e49b1ad6fee"/>
+					</entry>
+				</section>
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:1"/>
+		<resource>
+			<Patient>
+				<id value="1"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<div class="hapiHeaderText">Frida <b>SCHIMMELPFENNIG-HAMMERSCHMIDT </b>
+						</div>
+						<table class="hapiPropertyTable">
+							<tbody>
+								<tr>
+									<td>Date of birth</td>
+									<td>
+										<span>15 March 1985</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</text>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+							<code value="GKV"/>
+							<display value="Gesetzliche Krankenversicherung"/>
+						</coding>
+					</type>
+					<system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+					<value value="K123456789"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<text value="Frida Schimmelpfennig-Hammerschmidt"/>
+					<family value="Schimmelpfennig-Hammerschmidt">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Schimmelpfennig-Hammerschmidt"/>
+						</extension>
+					</family>
+					<given value="Frida"/>
+				</name>
+				<gender value="female"/>
+				<birthDate value="1985-03-15"/>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:4"/>
+		<resource>
+			<Organization>
+				<id value="4"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Organization|1.1.0"/>
+				</meta>
+				<identifier>
+					<use value="official"/>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+							<code value="BSNR"/>
+						</coding>
+					</type>
+					<system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"/>
+					<value value="654321"/>
+				</identifier>
+				<name value="Praxis Dr. med. Hans Topp-Glücklich"/>
+				<address>
+					<type value="both"/>
+					<line value="Musterstr. 1">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="1"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Musterstr."/>
+						</extension>
+					</line>
+					<city value="Darmstadt"/>
+					<postalCode value="64283"/>
+					<country value="D"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:3"/>
+		<resource>
+			<Practitioner>
+				<id value="3"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitioner|1.1.0"/>
+				</meta>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+					<valueString value="Behandelnder Arzt"/>
+				</extension>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+							<code value="LANR"/>
+						</coding>
+					</type>
+					<system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
+					<value value="838382202"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<family value="Topp-Glücklich">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Topp-Glücklich"/>
+						</extension>
+					</family>
+					<given value="Hans"/>
+					<prefix value="Dr. med.">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+							<valueCode value="AC"/>
+						</extension>
+					</prefix>
+				</name>
+				<telecom>
+					<system value="phone"/>
+					<value value="06151/1111111"/>
+				</telecom>
+				<qualification>
+					<code>
+						<coding>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/>
+							<code value="010"/>
+							<display value="FA Allgemeinmedizin">
+								<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+									<extension url="content">
+										<valueString value="Qualifikation"/>
+									</extension>
+								</extension>
+							</display>
+						</coding>
+					</code>
+				</qualification>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:1664be96-8303-4de4-9c4a-fad35593eb06"/>
+		<resource>
+			<PractitionerRole>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitionerrole|1.1.0"/>
+				</meta>
+				<practitioner>
+					<reference value="urn:uuid:3"/>
+				</practitioner>
+				<organization>
+					<reference value="urn:uuid:4"/>
+				</organization>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:1b59dad5-b957-4615-bcf0-2859e93d5eb9"/>
+		<resource>
+			<Practitioner>
+				<id value="1b59dad5-b957-4615-bcf0-2859e93d5eb9"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitioner|1.1.0"/>
+				</meta>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+					<valueString value="Behandelnder Arzt"/>
+				</extension>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+							<code value="LANR"/>
+						</coding>
+					</type>
+					<system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
+					<value value="838382202"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<family value="Topp-Glücklich">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Topp-Glücklich"/>
+						</extension>
+					</family>
+					<given value="Hans"/>
+					<prefix value="Dr. med.">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+							<valueCode value="AC"/>
+						</extension>
+					</prefix>
+				</name>
+				<telecom>
+					<system value="phone"/>
+					<value value="06151/1111111"/>
+				</telecom>
+				<qualification>
+					<code>
+						<coding>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/>
+							<code value="010"/>
+							<display value="FA Allgemeinmedizin">
+								<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+									<extension url="content">
+										<valueString value="Qualifikation"/>
+									</extension>
+								</extension>
+							</display>
+						</coding>
+					</code>
+				</qualification>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:797183fb-1dd7-40de-873e-3b8fc74a5f32"/>
+		<resource>
+			<PractitionerRole>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitionerrole|1.1.0"/>
+				</meta>
+				<practitioner>
+					<reference value="urn:uuid:1b59dad5-b957-4615-bcf0-2859e93d5eb9"/>
+				</practitioner>
+				<organization>
+					<reference value="urn:uuid:4"/>
+				</organization>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:ac5e75d2-0ead-4743-803e-2e49b1ad6fee"/>
+		<resource>
+			<Immunization>
+				<id value="ac5e75d2-0ead-4743-803e-2e49b1ad6fee"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Addendum|1.1.0"/>
+				</meta>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Enterer">
+					<extension url="mode">
+						<valueCodeableConcept>
+							<coding>
+								<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+								<code value="ENT"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="party">
+						<valueReference>
+							<reference value="urn:uuid:797183fb-1dd7-40de-873e-3b8fc74a5f32"/>
+						</valueReference>
+					</extension>
+				</extension>
+				<status value="completed"/>
+				<vaccineCode>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+						<code value="871895005"/>
+						<display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)">
+							<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+								<extension url="content">
+									<valueString value="Diphtherie-Haemophilus influenzae  B-Pertussis, Poliomyelitis, Tetanus, Hepatitis B-Impfstoff"/>
+								</extension>
+							</extension>
+						</display>
+					</coding>
+					<coding>
+						<system value="http://fhir.de/CodeSystem/dimdi/atc"/>
+						<version value="atcgm2021"/>
+						<code value="J07CA09"/>
+						<display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Poliomyelitis-Tetanus-Hepatitis B"/>
+					</coding>
+					<text value="Diphtherie-Haemophilus influenzae  B-Pertussis, Poliomyelitis, Tetanus, Hepatitis B-Impfstoff"/>
+				</vaccineCode>
+				<patient>
+					<reference value="urn:uuid:1"/>
+				</patient>
+				<occurrenceDateTime value="2021-12-07"/>
+				<primarySource value="false"/>
+				<reportOrigin>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+						<code value="recall"/>
+						<display value="Parent/Guardian/Patient Recall"/>
+					</coding>
+					<text value="Eltern/Erziehungsberechtigter/Patienten Erinnerung"/>
+				</reportOrigin>
+				<protocolApplied>
+					<targetDisease>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+							<code value="398102009"/>
+							<display value="Poliomyelitis">
+								<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+									<extension url="content">
+										<valueString value="Poliomyelitis"/>
+									</extension>
+								</extension>
+							</display>
+							<userSelected value="false"/>
+						</coding>
+					</targetDisease>
+					<targetDisease>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+							<code value="66071002"/>
+							<display value="Hepatitis B">
+								<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+									<extension url="content">
+										<valueString value="Hepatitis B"/>
+									</extension>
+								</extension>
+							</display>
+							<userSelected value="false"/>
+						</coding>
+					</targetDisease>
+					<targetDisease>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+							<code value="76902006"/>
+							<display value="Tetanus-Infektion">
+								<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+									<extension url="content">
+										<valueString value="Tetanus-Infektion"/>
+									</extension>
+								</extension>
+							</display>
+							<userSelected value="false"/>
+						</coding>
+					</targetDisease>
+					<targetDisease>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+							<code value="27836007"/>
+							<display value="Pertussis">
+								<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+									<extension url="content">
+										<valueString value="Pertussis"/>
+									</extension>
+								</extension>
+							</display>
+							<userSelected value="false"/>
+						</coding>
+					</targetDisease>
+					<targetDisease>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+							<code value="709410003"/>
+							<display value="Haemophilus-influenzae-Typ-B-Infektion">
+								<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+									<extension url="content">
+										<valueString value="Haemophilus-influenzae-Typ-B-Infektion"/>
+									</extension>
+								</extension>
+							</display>
+							<userSelected value="false"/>
+						</coding>
+					</targetDisease>
+					<targetDisease>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+							<code value="397430003"/>
+							<display value="Diphtherie">
+								<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+									<extension url="content">
+										<valueString value="Diphtherie"/>
+									</extension>
+								</extension>
+							</display>
+							<userSelected value="false"/>
+						</coding>
+					</targetDisease>
+				</protocolApplied>
+			</Immunization>
+		</resource>
+	</entry>
+</Bundle>
