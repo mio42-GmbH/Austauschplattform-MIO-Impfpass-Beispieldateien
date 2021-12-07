@@ -84,16 +84,6 @@
           </family>
           <given value="Kim"/>
         </name>
-        <officialName>
-          <use value="official"/>
-          <text value="Kim Schimmelpfennig-Hammerschmidt"/>
-          <family value="Schimmelpfennig-Hammerschmidt">
-            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-              <valueString value="Schimmelpfennig-Hammerschmidt"/>
-            </extension>
-          </family>
-          <given value="Kim"/>
-        </officialName>
         <gender value="other"/>
         <birthDate value="2021-04-20"/>
       </Patient>
@@ -161,16 +151,6 @@
           </family>
           <given value="Hans"/>
         </name>
-        <officialName>
-          <use value="official"/>
-          <text value="Hans Topp-Glücklich"/>
-          <family value="Topp-Glücklich">
-            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-              <valueString value="Topp-Glücklich"/>
-            </extension>
-          </family>
-          <given value="Hans"/>
-        </officialName>
         <identifier>
           <type>
             <coding>
@@ -221,7 +201,6 @@
           <country value="D"/>
         </address>
         <identifier>
-          <BSNR_SCHEME>https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR</BSNR_SCHEME>
           <use value="official"/>
           <type>
             <coding>
@@ -263,7 +242,6 @@
           <country value="D"/>
         </address>
         <identifier>
-          <BSNR_SCHEME>https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR</BSNR_SCHEME>
           <use value="official"/>
           <type>
             <coding>
