@@ -335,8 +335,8 @@
 				<primarySource value="false"/>
 				<reportOrigin>
 					<coding>
-						<system value="http://snomed.info/sct"/>
-						<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+						<system value="http://terminology.hl7.org/CodeSystem/immunization-origin"/>
+						<version value="4.0.1"/>
 						<code value="recall"/>
 						<display value="Parent/Guardian/Patient Recall"/>
 					</coding>
@@ -433,6 +433,11 @@
 							<userSelected value="false"/>
 						</coding>
 					</targetDisease>
+					<doseNumberString>
+						<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+							<valueCode value="unknown" />
+						</extension>
+					</doseNumberString>
 				</protocolApplied>
 			</Immunization>
 		</resource>
