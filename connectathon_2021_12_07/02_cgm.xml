@@ -6,7 +6,7 @@
 	</meta>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
-		<value value="67b733fe-39a3-48b9-b206-73ae1a545b6e"/>
+		<value value="urn:uuid:67b733fe-39a3-48b9-b206-73ae1a545b6e"/>
 	</identifier>
 	<type value="document"/>
 	<timestamp value="2021-12-07T10:56:26.661Z"/>
