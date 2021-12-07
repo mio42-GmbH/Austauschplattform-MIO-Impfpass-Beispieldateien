@@ -224,13 +224,25 @@
 						<system value="http://snomed.info/sct"/>
 						<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
 						<code value="363787002:370134009=123029007,246093002=120969007,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003"/>
-						<display value="Observable entity (observable entity):Time aspect (attribute)=Single point in time (qualifier value),Component (attribute)=Measles virus antibody (substance),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)"/>
+						<display value="Observable entity (observable entity):Time aspect (attribute)=Single point in time (qualifier value),Component (attribute)=Measles virus antibody (substance),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)">
+							<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+								<extension url="content">
+									<valueString value="Test"/>
+								</extension>
+							</extension>
+						</display>
 					</coding>
 					<coding>
 						<system value="http://loinc.org"/>
 						<version value="2.68"/>
 						<code value="46197-0"/>
-						<display value="Measles virus Ab [Presence] in Serum"/>
+						<display value="Measles virus Ab [Presence] in Serum">
+							<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+								<extension url="content">
+									<valueString value="Masern Antik&#246;rpernachweis"/>
+								</extension>
+							</extension>
+						</display>
 					</coding>
 				</code>
 				<subject>
@@ -242,7 +254,13 @@
 						<system value="http://snomed.info/sct"/>
 						<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
 						<code value="365861007:363713009=260385009"/>
-						<display value="Finding of immune status (finding) : Has interpretation (attribute) = Negative (qualifier value)"/>
+						<display value="Finding of immune status (finding) : Has interpretation (attribute) = Negative (qualifier value)">
+							<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+								<extension url="content">
+									<valueString value="Immunit&#228;t nicht erreicht"/>
+								</extension>
+							</extension>
+						</display>
 					</coding>
 				</interpretation>
 				<note>
