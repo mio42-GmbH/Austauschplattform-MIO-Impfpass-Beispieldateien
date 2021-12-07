@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?><Bundle xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated>2021-12-07T10:44:10Z</lastUpdated>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Bundle_Entry|1.1.0"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:0c1c62ef-da5d-4d26-a7a9-342d7ea3012b"/>
+  </identifier>
+  <id value="urn:uuid:0c1c62ef-da5d-4d26-a7a9-342d7ea3012b"/>
+  <type value="document"/>
+  <timestamp value="2021-12-07T10:44:10Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:03c15c77-e79d-4c63-a1ec-9161181122ae"/>
+    <resource>
+      <Composition>
+        <id value="03c15c77-e79d-4c63-a1ec-9161181122ae"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Addendum|1.1.0"/>
+        </meta>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11369-6"/>
+            <display value="History of Immunization Narrative"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:1158c7cb-da9c-4e76-a1c8-717af0036c0d"/>
+        </subject>
+        <date value="2021-12-07T10:44:10Z"/>
+        <author>
+          <reference value="urn:uuid:f6ad009b-aba2-405d-9962-873faf99f5ed"/>
+        </author>
+        <title value="Impfeintrag-/einträge Nach-/übertrag"/>
+        <section>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="713404003"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <display value="Vaccination given (situation)"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="urn:uuid:73018c30-bcd5-4f91-aacf-84097f5df304"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1158c7cb-da9c-4e76-a1c8-717af0036c0d"/>
+    <resource>
+      <Patient>
+        <id value="1158c7cb-da9c-4e76-a1c8-717af0036c0d"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="" xmlns:ns2="http://hl7.org/fhir">
+            <p>Patient: Kim Schimmelpfennig-Hammerschmidt</p>
+          </div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type"/>
+              <code value="kvk"/>
+            </coding>
+          </type>
+          <system value="http://fhir.de/NamingSystem/gkv/kvk-versichertennummer"/>
+          <value value="K123456789"/>
+        </identifier>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="fhirOfficialName">
+          <use value="official"/>
+          <text value="Kim Schimmelpfennig-Hammerschmidt"/>
+          <family value="Schimmelpfennig-Hammerschmidt">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Schimmelpfennig-Hammerschmidt"/>
+            </extension>
+          </family>
+          <given value="Kim"/>
+        </name>
+        <officialName>
+          <use value="official"/>
+          <text value="Kim Schimmelpfennig-Hammerschmidt"/>
+          <family value="Schimmelpfennig-Hammerschmidt">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Schimmelpfennig-Hammerschmidt"/>
+            </extension>
+          </family>
+          <given value="Kim"/>
+        </officialName>
+        <gender value="other"/>
+        <birthDate value="2021-04-20"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:25faa2e0-3324-44cd-b959-3a0a2cc43a35"/>
+    <resource>
+      <Practitioner>
+        <id value="25faa2e0-3324-44cd-b959-3a0a2cc43a35"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitioner|1.1.0"/>
+        </meta>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="fhirOfficialName">
+          <use value="official"/>
+          <text value="Hans Topp-Glücklich"/>
+          <family value="Topp-Glücklich">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Topp-Glücklich"/>
+            </extension>
+          </family>
+          <given value="Hans"/>
+        </name>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="LANR"/>
+            </coding>
+          </type>
+          <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
+          <value value="838382202"/>
+        </identifier>
+        <qualification>
+          <code>
+            <coding>
+              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/>
+              <code value="341"/>
+              <display value="FA Kinder-und Jugendmedizin"/>
+            </coding>
+          </code>
+        </qualification>
+        <telecom>
+          <system value="phone"/>
+          <value value="0211 / 1111111"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:52dc7cbc-e6e2-4fce-9dbc-7edaf73648cf"/>
+    <resource>
+      <Practitioner>
+        <id value="52dc7cbc-e6e2-4fce-9dbc-7edaf73648cf"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitioner_Addendum|1.1.0"/>
+        </meta>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="fhirOfficialName">
+          <use value="official"/>
+          <text value="Hans Topp-Glücklich"/>
+          <family value="Topp-Glücklich">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Topp-Glücklich"/>
+            </extension>
+          </family>
+          <given value="Hans"/>
+        </name>
+        <officialName>
+          <use value="official"/>
+          <text value="Hans Topp-Glücklich"/>
+          <family value="Topp-Glücklich">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Topp-Glücklich"/>
+            </extension>
+          </family>
+          <given value="Hans"/>
+        </officialName>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="LANR"/>
+            </coding>
+          </type>
+          <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
+          <value value="838382202"/>
+        </identifier>
+        <qualification>
+          <code>
+            <coding>
+              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/>
+              <code value="341"/>
+              <display value="FA Kinder-und Jugendmedizin"/>
+            </coding>
+          </code>
+        </qualification>
+        <telecom>
+          <system value="phone"/>
+          <value value="0211 / 1111111"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:4cdbd66e-0878-42c3-bdca-ae6f75ee3219"/>
+    <resource>
+      <Organization>
+        <id value="4cdbd66e-0878-42c3-bdca-ae6f75ee3219"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Organization|1.1.0"/>
+        </meta>
+        <name value="Dr. med. Hans Topp-Glücklich"/>
+        <address>
+          <type value="both"/>
+          <line value="Optional[Musterstr.] Optional[1]">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="1"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Musterstr."/>
+            </extension>
+          </line>
+          <city value="Darmstadt"/>
+          <postalCode value="64283"/>
+          <country value="D"/>
+        </address>
+        <identifier>
+          <BSNR_SCHEME>https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR</BSNR_SCHEME>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="BSNR"/>
+            </coding>
+          </type>
+          <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"/>
+          <value value="391234511"/>
+        </identifier>
+        <telecom>
+          <system value="email"/>
+          <value value="KM@Testpraxis.de"/>
+        </telecom>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d8ff2d98-204e-494e-a07c-07115bb4ec35"/>
+    <resource>
+      <Organization>
+        <id value="d8ff2d98-204e-494e-a07c-07115bb4ec35"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Organization_Addendum|1.1.0"/>
+        </meta>
+        <name value="Dr. med. Hans Topp-Glücklich"/>
+        <address>
+          <type value="both"/>
+          <line value="Optional[Musterstr.] Optional[1]">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="1"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Musterstr."/>
+            </extension>
+          </line>
+          <city value="Darmstadt"/>
+          <postalCode value="64283"/>
+          <country value="D"/>
+        </address>
+        <identifier>
+          <BSNR_SCHEME>https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR</BSNR_SCHEME>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="BSNR"/>
+            </coding>
+          </type>
+          <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"/>
+          <value value="391234511"/>
+        </identifier>
+        <telecom>
+          <system value="email"/>
+          <value value="KM@Testpraxis.de"/>
+        </telecom>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f6ad009b-aba2-405d-9962-873faf99f5ed"/>
+    <resource>
+      <PractitionerRole>
+        <id value="f6ad009b-aba2-405d-9962-873faf99f5ed"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitionerrole|1.1.0"/>
+        </meta>
+        <practitioner>
+          <reference value="urn:uuid:25faa2e0-3324-44cd-b959-3a0a2cc43a35"/>
+        </practitioner>
+        <organization>
+          <reference value="urn:uuid:4cdbd66e-0878-42c3-bdca-ae6f75ee3219"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:092dec93-268e-4a2d-91f4-00b4207c80de"/>
+    <resource>
+      <PractitionerRole>
+        <id value="092dec93-268e-4a2d-91f4-00b4207c80de"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitionerrole_Addendum|1.1.0"/>
+        </meta>
+        <practitioner>
+          <reference value="urn:uuid:52dc7cbc-e6e2-4fce-9dbc-7edaf73648cf"/>
+        </practitioner>
+        <organization>
+          <reference value="urn:uuid:d8ff2d98-204e-494e-a07c-07115bb4ec35"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:73018c30-bcd5-4f91-aacf-84097f5df304"/>
+    <resource>
+      <Immunization>
+        <id value="73018c30-bcd5-4f91-aacf-84097f5df304"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Addendum|1.1.0"/>
+        </meta>
+        <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type" xsi:type="kbvEXMIOVaccinationEntryType">
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Technical_Entry_Type"/>
+              <code value="Eduai"/>
+              <display value="Eintrag digital und als Impfbescheinigung"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Attester_Addendum" xsi:type="kbvEXMIOVaccinationAttesterAddendum">
+          <attesterModeExtension url="mode">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/composition-attestation-mode"/>
+                <code value="legal"/>
+              </coding>
+            </valueCodeableConcept>
+          </attesterModeExtension>
+          <partyExtension url="party">
+            <valueReference>
+              <reference value="urn:uuid:092dec93-268e-4a2d-91f4-00b4207c80de"/>
+            </valueReference>
+          </partyExtension>
+          <extension url="mode" xsi:type="modeExtension">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/composition-attestation-mode"/>
+                <code value="legal"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension url="party" xsi:type="partyExtension">
+            <valueReference>
+              <reference value="urn:uuid:092dec93-268e-4a2d-91f4-00b4207c80de"/>
+            </valueReference>
+          </extension>
+        </extension>
+        <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Enterer" xsi:type="kbvEXMIOVaccinationEnterer">
+          <entererModeExtension url="mode">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="ENT"/>
+              </coding>
+            </valueCodeableConcept>
+          </entererModeExtension>
+          <partyExtension url="party">
+            <valueReference>
+              <reference value="urn:uuid:f6ad009b-aba2-405d-9962-873faf99f5ed"/>
+            </valueReference>
+          </partyExtension>
+          <extension url="mode" xsi:type="modeExtension">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="ENT"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension url="party" xsi:type="partyExtension">
+            <valueReference>
+              <reference value="urn:uuid:f6ad009b-aba2-405d-9962-873faf99f5ed"/>
+            </valueReference>
+          </extension>
+        </extension>
+        <entryType url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type">
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Technical_Entry_Type"/>
+              <code value="Eduai"/>
+              <display value="Eintrag digital und als Impfbescheinigung"/>
+            </coding>
+          </valueCodeableConcept>
+        </entryType>
+        <attester url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Attester_Addendum">
+          <attesterModeExtension url="mode">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/composition-attestation-mode"/>
+                <code value="legal"/>
+              </coding>
+            </valueCodeableConcept>
+          </attesterModeExtension>
+          <partyExtension url="party">
+            <valueReference>
+              <reference value="urn:uuid:092dec93-268e-4a2d-91f4-00b4207c80de"/>
+            </valueReference>
+          </partyExtension>
+          <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="mode" xsi:type="modeExtension">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/composition-attestation-mode"/>
+                <code value="legal"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="party" xsi:type="partyExtension">
+            <valueReference>
+              <reference value="urn:uuid:092dec93-268e-4a2d-91f4-00b4207c80de"/>
+            </valueReference>
+          </extension>
+          <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="mode" xsi:type="modeExtension">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/composition-attestation-mode"/>
+                <code value="legal"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="party" xsi:type="partyExtension">
+            <valueReference>
+              <reference value="urn:uuid:092dec93-268e-4a2d-91f4-00b4207c80de"/>
+            </valueReference>
+          </extension>
+        </attester>
+        <enterer url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Enterer">
+          <entererModeExtension url="mode">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="ENT"/>
+              </coding>
+            </valueCodeableConcept>
+          </entererModeExtension>
+          <partyExtension url="party">
+            <valueReference>
+              <reference value="urn:uuid:f6ad009b-aba2-405d-9962-873faf99f5ed"/>
+            </valueReference>
+          </partyExtension>
+          <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="mode" xsi:type="modeExtension">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="ENT"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="party" xsi:type="partyExtension">
+            <valueReference>
+              <reference value="urn:uuid:f6ad009b-aba2-405d-9962-873faf99f5ed"/>
+            </valueReference>
+          </extension>
+          <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="mode" xsi:type="modeExtension">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="ENT"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="party" xsi:type="partyExtension">
+            <valueReference>
+              <reference value="urn:uuid:f6ad009b-aba2-405d-9962-873faf99f5ed"/>
+            </valueReference>
+          </extension>
+        </enterer>
+        <status value="completed"/>
+        <vaccineCode>
+          <text value="Infanrix Hexa"/>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="871895005"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)"/>
+          </coding>
+        </vaccineCode>
+        <patient>
+          <reference value="urn:uuid:1158c7cb-da9c-4e76-a1c8-717af0036c0d"/>
+        </patient>
+        <occurrenceDateTime value="2021-11-10"/>
+        <primarySource value="false"/>
+        <reportOrigin>
+          <coding>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_ImmunizationOriginCodes_German"/>
+            <code value="record"/>
+            <display value="Schriftliche Dokumentation"/>
+          </coding>
+          <text value="Schriftliche Dokumentation"/>
+        </reportOrigin>
+        <protocolApplied>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="76902006"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <display value="Others">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Sonstige"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="397430003"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <display value="Others">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Sonstige"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="27836007"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <display value="Others">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Sonstige"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="66071002"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <display value="Others">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Sonstige"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="398102009"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <display value="Others">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Sonstige"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="709410003"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <display value="Others">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Sonstige"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <doseNumber value="1"/>
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Follow_Up">
+            <valueDateTime value="2022-12-07T10:44:10Z"/>
+          </extension>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+  </entry>
+</Bundle>
