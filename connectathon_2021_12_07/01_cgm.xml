@@ -442,6 +442,11 @@
 							<userSelected value="false"/>
 						</coding>
 					</targetDisease>
+					<doseNumberString>
+           					 <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                					<valueCode value="unknown" />
+            					 </extension>
+        				</doseNumberString>
 				</protocolApplied>
 			</Immunization>
 		</resource>
