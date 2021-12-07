@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="de4f1097-1d1b-474b-91d0-58d442bedf3a"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Bundle_Entry|1.1.0"/>
+	</meta>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="urn:uuid:de4f1097-1d1b-474b-91d0-58d442bedf3a"/>
+	</identifier>
+	<type value="document"/>
+	<timestamp value="2021-12-07T10:54:42.376Z"/>
+	<entry>
+		<fullUrl value="urn:uuid:451aa25a-c68a-4230-a2d5-9098cb5948ec"/>
+		<resource>
+			<Composition>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Prime|1.1.0"/>
+				</meta>
+				<status value="final"/>
+				<type>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="11369-6"/>
+						<display value="History of Immunization Narrative"/>
+					</coding>
+				</type>
+				<subject>
+					<reference value="urn:uuid:1"/>
+				</subject>
+				<date value="2021-12-07"/>
+				<author>
+					<reference value="urn:uuid:f916ebb5-7887-49cb-8a46-0559f28c6533"/>
+				</author>
+				<title value="Impfeintrag-/einträge"/>
+				<section>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+							<code value="243796009:363589002=121258006"/>
+							<display value="Situation with explicit context (situation) : Associated procedure (attribute) = Procedure to identify antibody (procedure)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:abd18a47-8a3c-4807-8fef-bf649a2557e6"/>
+					</entry>
+				</section>
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:1"/>
+		<resource>
+			<Patient>
+				<id value="1"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<div class="hapiHeaderText">Frida <b>SCHIMMELPFENNIG-HAMMERSCHMIDT </b>
+						</div>
+						<table class="hapiPropertyTable">
+							<tbody>
+								<tr>
+									<td>Date of birth</td>
+									<td>
+										<span>15 March 1985</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</text>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+							<code value="GKV"/>
+							<display value="Gesetzliche Krankenversicherung"/>
+						</coding>
+					</type>
+					<system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+					<value value="K123456789"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<text value="Frida Schimmelpfennig-Hammerschmidt"/>
+					<family value="Schimmelpfennig-Hammerschmidt">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Schimmelpfennig-Hammerschmidt"/>
+						</extension>
+					</family>
+					<given value="Frida"/>
+				</name>
+				<gender value="female"/>
+				<birthDate value="1985-03-15"/>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:4"/>
+		<resource>
+			<Organization>
+				<id value="4"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Organization|1.1.0"/>
+				</meta>
+				<identifier>
+					<use value="official"/>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+							<code value="BSNR"/>
+						</coding>
+					</type>
+					<system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"/>
+					<value value="654321"/>
+				</identifier>
+				<name value="Praxis Dr. med. Hans Topp-Glücklich"/>
+				<address>
+					<type value="both"/>
+					<line value="Musterstr. 1">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="1"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Musterstr."/>
+						</extension>
+					</line>
+					<city value="Darmstadt"/>
+					<postalCode value="64283"/>
+					<country value="D"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:3"/>
+		<resource>
+			<Practitioner>
+				<id value="3"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitioner|1.1.0"/>
+				</meta>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+					<valueString value="Behandelnder Arzt"/>
+				</extension>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+							<code value="LANR"/>
+						</coding>
+					</type>
+					<system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
+					<value value="838382202"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<family value="Topp-Glücklich">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Topp-Glücklich"/>
+						</extension>
+					</family>
+					<given value="Hans"/>
+					<prefix value="Dr. med.">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+							<valueCode value="AC"/>
+						</extension>
+					</prefix>
+				</name>
+				<telecom>
+					<system value="phone"/>
+					<value value="06151/1111111"/>
+				</telecom>
+				<qualification>
+					<code>
+						<coding>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/>
+							<code value="010"/>
+							<display value="FA Allgemeinmedizin">
+								<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+									<extension url="content">
+										<valueString value="Qualifikation"/>
+									</extension>
+								</extension>
+							</display>
+						</coding>
+					</code>
+				</qualification>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:f916ebb5-7887-49cb-8a46-0559f28c6533"/>
+		<resource>
+			<PractitionerRole>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitionerrole|1.1.0"/>
+				</meta>
+				<practitioner>
+					<reference value="urn:uuid:3"/>
+				</practitioner>
+				<organization>
+					<reference value="urn:uuid:4"/>
+				</organization>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:abd18a47-8a3c-4807-8fef-bf649a2557e6"/>
+		<resource>
+			<Observation>
+				<id value="abd18a47-8a3c-4807-8fef-bf649a2557e6"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Observation_Immunization_Status|1.1.0"/>
+				</meta>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+						<code value="363787002:370134009=123029007,246093002=120969007,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003"/>
+						<display value="Observable entity (observable entity):Time aspect (attribute)=Single point in time (qualifier value),Component (attribute)=Measles virus antibody (substance),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.68"/>
+						<code value="46197-0"/>
+						<display value="Measles virus Ab [Presence] in Serum"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:1"/>
+				</subject>
+				<issued value="2021-12-07T10:54:27.274Z"/>
+				<interpretation>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+						<code value="365861007:363713009=260385009"/>
+						<display value="Finding of immune status (finding) : Has interpretation (attribute) = Negative (qualifier value)"/>
+					</coding>
+				</interpretation>
+				<note>
+					<text value="abc"/>
+				</note>
+			</Observation>
+		</resource>
+	</entry>
+</Bundle>
