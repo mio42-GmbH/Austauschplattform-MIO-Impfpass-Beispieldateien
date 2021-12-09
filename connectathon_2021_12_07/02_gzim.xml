@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><Bundle xmlns="http://hl7.org/fhir">
-  <id value="01805805-dd35-424c-82ef-00b4d0a1bbe5"/>
+  <id value="791bd63c-abfe-4641-85c7-923fd8b86ca2"/>
   <meta>
-    <lastUpdated value="2021-12-09T10:16:43Z"/>
+    <lastUpdated value="2021-12-09T10:21:03Z"/>
     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Bundle_Entry|1.1.0"/>
   </meta>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:uuid:01805805-dd35-424c-82ef-00b4d0a1bbe5"/>
+    <value value="urn:uuid:791bd63c-abfe-4641-85c7-923fd8b86ca2"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2021-12-09T10:16:43Z"/>
+  <timestamp value="2021-12-09T10:21:03Z"/>
   <entry>
-    <fullUrl value="urn:uuid:e3192e05-0b73-45c6-b6d9-a7c6b32d84a4"/>
+    <fullUrl value="urn:uuid:aa0a00c3-5cd2-4c04-93bc-fcc25d5af0ad"/>
     <resource>
       <Composition>
-        <id value="e3192e05-0b73-45c6-b6d9-a7c6b32d84a4"/>
+        <id value="aa0a00c3-5cd2-4c04-93bc-fcc25d5af0ad"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Prime|1.1.0"/>
         </meta>
@@ -27,11 +27,11 @@
           </coding>
         </type>
         <subject>
-          <reference value="urn:uuid:7b52a1d0-53fc-4594-918b-e5d98360b1f6"/>
+          <reference value="urn:uuid:e4421bf6-dcc4-4c0c-bb41-47f6301402fa"/>
         </subject>
-        <date value="2021-12-09T10:17:06Z"/>
+        <date value="2021-12-09T10:21:03Z"/>
         <author>
-          <reference value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
+          <reference value="urn:uuid:c927591e-22a1-467a-b5b2-f94d062ccff0"/>
         </author>
         <title value="Impfeinträge"/>
         <section>
@@ -44,20 +44,20 @@
             </coding>
           </code>
           <entry>
-            <reference value="urn:uuid:d5127de4-a452-4395-8baa-cbcf684a195d"/>
+            <reference value="urn:uuid:d4d52345-9b82-4329-909a-933ef1f16afe"/>
           </entry>
           <entry>
-            <reference value="urn:uuid:c345d27d-8f29-4210-9f6d-90c119613b71"/>
+            <reference value="urn:uuid:14934221-ae0f-4853-8f66-83e5163986de"/>
           </entry>
         </section>
       </Composition>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:d5127de4-a452-4395-8baa-cbcf684a195d"/>
+    <fullUrl value="urn:uuid:d4d52345-9b82-4329-909a-933ef1f16afe"/>
     <resource>
       <Immunization>
-        <id value="d5127de4-a452-4395-8baa-cbcf684a195d"/>
+        <id value="d4d52345-9b82-4329-909a-933ef1f16afe"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime|1.1.0"/>
         </meta>
@@ -81,7 +81,7 @@
           </extension>
           <extension url="party">
             <valueReference>
-              <reference value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
+              <reference value="urn:uuid:c927591e-22a1-467a-b5b2-f94d062ccff0"/>
             </valueReference>
           </extension>
         </extension>
@@ -96,7 +96,7 @@
           </extension>
           <extension url="party">
             <valueReference>
-              <reference value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
+              <reference value="urn:uuid:c927591e-22a1-467a-b5b2-f94d062ccff0"/>
             </valueReference>
           </extension>
         </extension>
@@ -128,13 +128,10 @@
           <text value="Infanrix Hexa"/>
         </vaccineCode>
         <patient>
-          <reference value="urn:uuid:7b52a1d0-53fc-4594-918b-e5d98360b1f6"/>
+          <reference value="urn:uuid:e4421bf6-dcc4-4c0c-bb41-47f6301402fa"/>
         </patient>
         <occurrenceDateTime value="2021-11-10"/>
         <primarySource value="true"/>
-        <manufacturer>
-          <display value=""/>
-        </manufacturer>
         <lotNumber value="XY123"/>
         <note>
           <text value="Bei einer ungewöhnlichen Impfreaktion sollte die impfende ärztliche Person benachrichtigt werden. Die ärztlich tätige Person hat, wenn der Verdacht einer gesundheitlichen Schädigung besteht, die über das übliche Ausmaß einer Impfreaktion hinaus geht verpflichtet, den Verdacht dem zuständigen Gesundheitsamt namentlich zu melden (§ 6 Absatz 1 Nr 3 des lnfektionsschutzgesetzes • lfSG) Im Falle eines Impfschadens besteht unter den Voraussetzungen des § 60 Absatz 1 lfSG ein Anspruch auf Entschädigung in entsprechender Anwendung der Vorschriften des Bundesversorgungsgesetzes. Der Antrag ist bei der für die Durchführung des Bundesversorgungsgesetzes zuständigen Behörde (§ 64 Absatz 1 lfSG, i.d.R. 'Versorgungsamt') zu stellen. Weitere Auskünfte erteilt das zuständige Gesundheitsamt."/>
@@ -144,45 +141,17 @@
         </note>
         <protocolApplied>
           <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Follow_Up">
-            <valueDateTime value="2021-12-07T10:16:43Z"/>
+            <valueDateTime value="2021-12-07T10:21:03Z"/>
           </extension>
           <targetDisease>
             <coding>
               <system value="http://snomed.info/sct"/>
               <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="398102009"/>
-              <display value="Acute poliomyelitis (disorder)">
+              <code value="709410003"/>
+              <display value="Haemophilus influenzae type b infection (disorder)">
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
                   <extension url="content">
-                    <valueString value="Poliomyelitis"/>
-                  </extension>
-                </extension>
-              </display>
-            </coding>
-          </targetDisease>
-          <targetDisease>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="27836007"/>
-              <display value="Pertussis (disorder)">
-                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
-                  <extension url="content">
-                    <valueString value="Pertussis"/>
-                  </extension>
-                </extension>
-              </display>
-            </coding>
-          </targetDisease>
-          <targetDisease>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="76902006"/>
-              <display value="Tetanus (disorder)">
-                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
-                  <extension url="content">
-                    <valueString value="Tetanus-Infektion"/>
+                    <valueString value="Haemophilus-influenzae-Typ-B-Infektion"/>
                   </extension>
                 </extension>
               </display>
@@ -206,11 +175,39 @@
             <coding>
               <system value="http://snomed.info/sct"/>
               <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="709410003"/>
-              <display value="Haemophilus influenzae type b infection (disorder)">
+              <code value="76902006"/>
+              <display value="Tetanus (disorder)">
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
                   <extension url="content">
-                    <valueString value="Haemophilus-influenzae-Typ-B-Infektion"/>
+                    <valueString value="Tetanus-Infektion"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <code value="27836007"/>
+              <display value="Pertussis (disorder)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Pertussis"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <code value="398102009"/>
+              <display value="Acute poliomyelitis (disorder)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Poliomyelitis"/>
                   </extension>
                 </extension>
               </display>
@@ -240,10 +237,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:c345d27d-8f29-4210-9f6d-90c119613b71"/>
+    <fullUrl value="urn:uuid:14934221-ae0f-4853-8f66-83e5163986de"/>
     <resource>
       <Immunization>
-        <id value="c345d27d-8f29-4210-9f6d-90c119613b71"/>
+        <id value="14934221-ae0f-4853-8f66-83e5163986de"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime|1.1.0"/>
         </meta>
@@ -267,7 +264,7 @@
           </extension>
           <extension url="party">
             <valueReference>
-              <reference value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
+              <reference value="urn:uuid:c927591e-22a1-467a-b5b2-f94d062ccff0"/>
             </valueReference>
           </extension>
         </extension>
@@ -282,7 +279,7 @@
           </extension>
           <extension url="party">
             <valueReference>
-              <reference value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
+              <reference value="urn:uuid:c927591e-22a1-467a-b5b2-f94d062ccff0"/>
             </valueReference>
           </extension>
         </extension>
@@ -314,7 +311,7 @@
           <text value="Masern, Mumps, Röteln (MMR) - Impfstoff)"/>
         </vaccineCode>
         <patient>
-          <reference value="urn:uuid:7b52a1d0-53fc-4594-918b-e5d98360b1f6"/>
+          <reference value="urn:uuid:e4421bf6-dcc4-4c0c-bb41-47f6301402fa"/>
         </patient>
         <occurrenceDateTime value="2021-12-07"/>
         <primarySource value="true"/>
@@ -327,7 +324,7 @@
         </note>
         <protocolApplied>
           <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Follow_Up">
-            <valueDateTime value="2021-12-07T10:17:06Z"/>
+            <valueDateTime value="2021-12-07T10:21:03Z"/>
           </extension>
           <targetDisease>
             <coding>
@@ -347,11 +344,11 @@
             <coding>
               <system value="http://snomed.info/sct"/>
               <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="14189004"/>
-              <display value="Measles (disorder)">
+              <code value="36989005"/>
+              <display value="Mumps (disorder)">
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
                   <extension url="content">
-                    <valueString value="Masern"/>
+                    <valueString value="Mumps"/>
                   </extension>
                 </extension>
               </display>
@@ -361,11 +358,11 @@
             <coding>
               <system value="http://snomed.info/sct"/>
               <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="36989005"/>
-              <display value="Mumps (disorder)">
+              <code value="14189004"/>
+              <display value="Measles (disorder)">
                 <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
                   <extension url="content">
-                    <valueString value="Mumps"/>
+                    <valueString value="Masern"/>
                   </extension>
                 </extension>
               </display>
@@ -381,10 +378,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:7b52a1d0-53fc-4594-918b-e5d98360b1f6"/>
+    <fullUrl value="urn:uuid:e4421bf6-dcc4-4c0c-bb41-47f6301402fa"/>
     <resource>
       <Patient>
-        <id value="7b52a1d0-53fc-4594-918b-e5d98360b1f6"/>
+        <id value="e4421bf6-dcc4-4c0c-bb41-47f6301402fa"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0"/>
         </meta>
@@ -420,10 +417,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:416823fb-05bd-4274-b0e6-1955c33dd794"/>
+    <fullUrl value="urn:uuid:44756cec-4951-49d0-b263-8075a3597ad6"/>
     <resource>
       <Practitioner>
-        <id value="416823fb-05bd-4274-b0e6-1955c33dd794"/>
+        <id value="44756cec-4951-49d0-b263-8075a3597ad6"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitioner|1.1.0"/>
         </meta>
@@ -464,10 +461,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:84df6380-6fc5-4019-806b-0fb02f322426"/>
+    <fullUrl value="urn:uuid:9fc1195a-96a3-4822-ae17-1a10de2c6d88"/>
     <resource>
       <Organization>
-        <id value="84df6380-6fc5-4019-806b-0fb02f322426"/>
+        <id value="9fc1195a-96a3-4822-ae17-1a10de2c6d88"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Organization|1.1.0"/>
         </meta>
@@ -505,18 +502,18 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
+    <fullUrl value="urn:uuid:c927591e-22a1-467a-b5b2-f94d062ccff0"/>
     <resource>
       <PractitionerRole>
-        <id value="02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
+        <id value="c927591e-22a1-467a-b5b2-f94d062ccff0"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitionerrole|1.1.0"/>
         </meta>
         <practitioner>
-          <reference value="urn:uuid:416823fb-05bd-4274-b0e6-1955c33dd794"/>
+          <reference value="urn:uuid:44756cec-4951-49d0-b263-8075a3597ad6"/>
         </practitioner>
         <organization>
-          <reference value="urn:uuid:84df6380-6fc5-4019-806b-0fb02f322426"/>
+          <reference value="urn:uuid:9fc1195a-96a3-4822-ae17-1a10de2c6d88"/>
         </organization>
       </PractitionerRole>
     </resource>
