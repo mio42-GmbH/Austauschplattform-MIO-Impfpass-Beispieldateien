@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><Bundle xmlns="http://hl7.org/fhir">
-  <id value="0ec5c514-cfea-49a7-874a-7ad74939d0bd"/>
+  <id value="01805805-dd35-424c-82ef-00b4d0a1bbe5"/>
   <meta>
-    <lastUpdated value="2021-12-08T14:48:29Z"/>
+    <lastUpdated value="2021-12-09T10:16:43Z"/>
     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Bundle_Entry|1.1.0"/>
   </meta>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:uuid:0ec5c514-cfea-49a7-874a-7ad74939d0bd"/>
+    <value value="urn:uuid:01805805-dd35-424c-82ef-00b4d0a1bbe5"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2021-12-08T14:48:29Z"/>
+  <timestamp value="2021-12-09T10:16:43Z"/>
   <entry>
-    <fullUrl value="urn:uuid:6e9f39e8-61b8-4dec-8581-fea7a4f45273"/>
+    <fullUrl value="urn:uuid:e3192e05-0b73-45c6-b6d9-a7c6b32d84a4"/>
     <resource>
       <Composition>
-        <id value="6e9f39e8-61b8-4dec-8581-fea7a4f45273"/>
+        <id value="e3192e05-0b73-45c6-b6d9-a7c6b32d84a4"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Prime|1.1.0"/>
         </meta>
@@ -27,11 +27,11 @@
           </coding>
         </type>
         <subject>
-          <reference value="urn:uuid:a3bbb84e-4960-4919-8306-9582a560bea9"/>
+          <reference value="urn:uuid:7b52a1d0-53fc-4594-918b-e5d98360b1f6"/>
         </subject>
-        <date value="2021-12-08T14:48:29Z"/>
+        <date value="2021-12-09T10:17:06Z"/>
         <author>
-          <reference value="urn:uuid:5a87f811-4d94-4f89-a9be-8b8b1e576342"/>
+          <reference value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
         </author>
         <title value="Impfeinträge"/>
         <section>
@@ -44,20 +44,347 @@
             </coding>
           </code>
           <entry>
-            <reference value="urn:uuid:b49f12b9-5c0b-4a89-aef7-1a67351abaaf"/>
+            <reference value="urn:uuid:d5127de4-a452-4395-8baa-cbcf684a195d"/>
           </entry>
           <entry>
-            <reference value="urn:uuid:e803f224-5eb9-445e-96ff-e65a4e2556bc"/>
+            <reference value="urn:uuid:c345d27d-8f29-4210-9f6d-90c119613b71"/>
           </entry>
         </section>
       </Composition>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:a3bbb84e-4960-4919-8306-9582a560bea9"/>
+    <fullUrl value="urn:uuid:d5127de4-a452-4395-8baa-cbcf684a195d"/>
+    <resource>
+      <Immunization>
+        <id value="d5127de4-a452-4395-8baa-cbcf684a195d"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime|1.1.0"/>
+        </meta>
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type">
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Technical_Entry_Type"/>
+              <code value="Eduii"/>
+              <display value="Eintrag digital und im Impfausweis"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Attester">
+          <extension url="mode">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/composition-attestation-mode"/>
+                <code value="legal"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension url="party">
+            <valueReference>
+              <reference value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
+            </valueReference>
+          </extension>
+        </extension>
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Enterer">
+          <extension url="mode">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="ENT"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension url="party">
+            <valueReference>
+              <reference value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
+            </valueReference>
+          </extension>
+        </extension>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
+            <version value="atcgm2021"/>
+            <code value="J07CA09"/>
+            <display value="Sonstige"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <code value="871895005"/>
+            <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)">
+              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                <extension url="content">
+                  <valueString value="Diphtherie-Haemophilus influenzae B-Pertussis, Poliomyelitis, Tetanus, Hepatitis B-Impfstoff"/>
+                </extension>
+              </extension>
+            </display>
+          </coding>
+          <coding>
+            <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+            <code value="00977060"/>
+            <display value="00977060"/>
+          </coding>
+          <text value="Infanrix Hexa"/>
+        </vaccineCode>
+        <patient>
+          <reference value="urn:uuid:7b52a1d0-53fc-4594-918b-e5d98360b1f6"/>
+        </patient>
+        <occurrenceDateTime value="2021-11-10"/>
+        <primarySource value="true"/>
+        <manufacturer>
+          <display value=""/>
+        </manufacturer>
+        <lotNumber value="XY123"/>
+        <note>
+          <text value="Bei einer ungewöhnlichen Impfreaktion sollte die impfende ärztliche Person benachrichtigt werden. Die ärztlich tätige Person hat, wenn der Verdacht einer gesundheitlichen Schädigung besteht, die über das übliche Ausmaß einer Impfreaktion hinaus geht verpflichtet, den Verdacht dem zuständigen Gesundheitsamt namentlich zu melden (§ 6 Absatz 1 Nr 3 des lnfektionsschutzgesetzes • lfSG) Im Falle eines Impfschadens besteht unter den Voraussetzungen des § 60 Absatz 1 lfSG ein Anspruch auf Entschädigung in entsprechender Anwendung der Vorschriften des Bundesversorgungsgesetzes. Der Antrag ist bei der für die Durchführung des Bundesversorgungsgesetzes zuständigen Behörde (§ 64 Absatz 1 lfSG, i.d.R. 'Versorgungsamt') zu stellen. Weitere Auskünfte erteilt das zuständige Gesundheitsamt."/>
+        </note>
+        <note>
+          <text value="leichte Reaktion im Gesicht"/>
+        </note>
+        <protocolApplied>
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Follow_Up">
+            <valueDateTime value="2021-12-07T10:16:43Z"/>
+          </extension>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <code value="398102009"/>
+              <display value="Acute poliomyelitis (disorder)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Poliomyelitis"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <code value="27836007"/>
+              <display value="Pertussis (disorder)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Pertussis"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <code value="76902006"/>
+              <display value="Tetanus (disorder)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Tetanus-Infektion"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <code value="397430003"/>
+              <display value="Diphtheria caused by Corynebacterium diphtheriae (disorder)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Diphtherie"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <code value="709410003"/>
+              <display value="Haemophilus influenzae type b infection (disorder)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Haemophilus-influenzae-Typ-B-Infektion"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <code value="66071002"/>
+              <display value="Viral hepatitis type B (disorder)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Hepatitis B"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <doseNumberString>
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="unknown"/>
+            </extension>
+          </doseNumberString>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c345d27d-8f29-4210-9f6d-90c119613b71"/>
+    <resource>
+      <Immunization>
+        <id value="c345d27d-8f29-4210-9f6d-90c119613b71"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime|1.1.0"/>
+        </meta>
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type">
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Technical_Entry_Type"/>
+              <code value="Eduii"/>
+              <display value="Eintrag digital und im Impfausweis"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Attester">
+          <extension url="mode">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/composition-attestation-mode"/>
+                <code value="legal"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension url="party">
+            <valueReference>
+              <reference value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
+            </valueReference>
+          </extension>
+        </extension>
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Enterer">
+          <extension url="mode">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="ENT"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension url="party">
+            <valueReference>
+              <reference value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
+            </valueReference>
+          </extension>
+        </extension>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
+            <version value="atcgm2021"/>
+            <code value="J07BD52"/>
+            <display value="Sonstige"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <code value="871908002"/>
+            <display value="Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)">
+              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                <extension url="content">
+                  <valueString value="Masern, Mumps, Röteln, Varicella-Impfstoff"/>
+                </extension>
+              </extension>
+            </display>
+          </coding>
+          <coding>
+            <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+            <code value="08627744"/>
+            <display value="08627744"/>
+          </coding>
+          <text value="Masern, Mumps, Röteln (MMR) - Impfstoff)"/>
+        </vaccineCode>
+        <patient>
+          <reference value="urn:uuid:7b52a1d0-53fc-4594-918b-e5d98360b1f6"/>
+        </patient>
+        <occurrenceDateTime value="2021-12-07"/>
+        <primarySource value="true"/>
+        <manufacturer>
+          <display value="GSK"/>
+        </manufacturer>
+        <lotNumber value="AB987"/>
+        <note>
+          <text value="Bei einer ungewöhnlichen Impfreaktion sollte die impfende ärztliche Person benachrichtigt werden. Die ärztlich tätige Person hat, wenn der Verdacht einer gesundheitlichen Schädigung besteht, die über das übliche Ausmaß einer Impfreaktion hinaus geht verpflichtet, den Verdacht dem zuständigen Gesundheitsamt namentlich zu melden (§ 6 Absatz 1 Nr 3 des lnfektionsschutzgesetzes • lfSG) Im Falle eines Impfschadens besteht unter den Voraussetzungen des § 60 Absatz 1 lfSG ein Anspruch auf Entschädigung in entsprechender Anwendung der Vorschriften des Bundesversorgungsgesetzes. Der Antrag ist bei der für die Durchführung des Bundesversorgungsgesetzes zuständigen Behörde (§ 64 Absatz 1 lfSG, i.d.R. 'Versorgungsamt') zu stellen. Weitere Auskünfte erteilt das zuständige Gesundheitsamt."/>
+        </note>
+        <protocolApplied>
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Follow_Up">
+            <valueDateTime value="2021-12-07T10:17:06Z"/>
+          </extension>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <code value="36653000"/>
+              <display value="Rubella (disorder)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Röteln"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <code value="14189004"/>
+              <display value="Measles (disorder)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Masern"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+              <code value="36989005"/>
+              <display value="Mumps (disorder)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Mumps"/>
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </targetDisease>
+          <doseNumberString>
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="unknown"/>
+            </extension>
+          </doseNumberString>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:7b52a1d0-53fc-4594-918b-e5d98360b1f6"/>
     <resource>
       <Patient>
-        <id value="a3bbb84e-4960-4919-8306-9582a560bea9"/>
+        <id value="7b52a1d0-53fc-4594-918b-e5d98360b1f6"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0"/>
         </meta>
@@ -93,10 +420,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:75477558-4c7f-43f4-81d1-2d518afdba2f"/>
+    <fullUrl value="urn:uuid:416823fb-05bd-4274-b0e6-1955c33dd794"/>
     <resource>
       <Practitioner>
-        <id value="75477558-4c7f-43f4-81d1-2d518afdba2f"/>
+        <id value="416823fb-05bd-4274-b0e6-1955c33dd794"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitioner|1.1.0"/>
         </meta>
@@ -137,10 +464,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:aaa82255-5e34-47cd-9094-5d2a20868efe"/>
+    <fullUrl value="urn:uuid:84df6380-6fc5-4019-806b-0fb02f322426"/>
     <resource>
       <Organization>
-        <id value="aaa82255-5e34-47cd-9094-5d2a20868efe"/>
+        <id value="84df6380-6fc5-4019-806b-0fb02f322426"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Organization|1.1.0"/>
         </meta>
@@ -178,283 +505,20 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:5a87f811-4d94-4f89-a9be-8b8b1e576342"/>
+    <fullUrl value="urn:uuid:02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
     <resource>
       <PractitionerRole>
-        <id value="5a87f811-4d94-4f89-a9be-8b8b1e576342"/>
+        <id value="02dc6d04-1df1-48ed-9cf4-35608afd16b5"/>
         <meta>
           <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitionerrole|1.1.0"/>
         </meta>
         <practitioner>
-          <reference value="urn:uuid:75477558-4c7f-43f4-81d1-2d518afdba2f"/>
+          <reference value="urn:uuid:416823fb-05bd-4274-b0e6-1955c33dd794"/>
         </practitioner>
         <organization>
-          <reference value="urn:uuid:aaa82255-5e34-47cd-9094-5d2a20868efe"/>
+          <reference value="urn:uuid:84df6380-6fc5-4019-806b-0fb02f322426"/>
         </organization>
       </PractitionerRole>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:b49f12b9-5c0b-4a89-aef7-1a67351abaaf"/>
-    <resource>
-      <Immunization>
-        <id value="b49f12b9-5c0b-4a89-aef7-1a67351abaaf"/>
-        <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime|1.1.0"/>
-        </meta>
-        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type">
-          <valueCodeableConcept>
-            <coding>
-              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Technical_Entry_Type"/>
-              <code value="Eduii"/>
-              <display value="Eintrag digital und im Impfausweis"/>
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Attester">
-          <extension url="mode">
-            <valueCodeableConcept>
-              <coding>
-                <system value="http://hl7.org/fhir/composition-attestation-mode"/>
-                <code value="legal"/>
-              </coding>
-            </valueCodeableConcept>
-          </extension>
-          <extension url="party">
-            <valueReference>
-              <reference value="urn:uuid:5a87f811-4d94-4f89-a9be-8b8b1e576342"/>
-            </valueReference>
-          </extension>
-        </extension>
-        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Enterer">
-          <extension url="mode">
-            <valueCodeableConcept>
-              <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
-                <code value="ENT"/>
-              </coding>
-            </valueCodeableConcept>
-          </extension>
-          <extension url="party">
-            <valueReference>
-              <reference value="urn:uuid:5a87f811-4d94-4f89-a9be-8b8b1e576342"/>
-            </valueReference>
-          </extension>
-        </extension>
-        <status value="completed"/>
-        <vaccineCode>
-          <coding>
-            <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
-            <version value="atcgm2021"/>
-            <code value="J07BD52"/>
-            <display value="Sonstige"/>
-          </coding>
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-            <code value="871908002"/>
-            <display value="Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)">
-              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
-                <extension url="content">
-                  <valueString value="Masern, Mumps, Röteln, Varicella-Impfstoff"/>
-                </extension>
-              </extension>
-            </display>
-          </coding>
-          <text value="Masern, Mumps, Röteln (MMR) - Impfstoff) "/>
-        </vaccineCode>
-        <patient>
-          <reference value="urn:uuid:a3bbb84e-4960-4919-8306-9582a560bea9"/>
-        </patient>
-        <occurrenceDateTime value="2021-11-10"/>
-        <primarySource value="true"/>
-        <lotNumber value="XY123"/>
-        <note>
-          <text value="Bei einer ungewöhnlichen Impfreaktion sollte die impfende ärztliche Person benachrichtigt werden. Die ärztlich tätige Person hat, wenn der Verdacht einer gesundheitlichen Schädigung besteht, die über das übliche Ausmaß einer Impfreaktion hinaus geht verpflichtet, den Verdacht dem zuständigen Gesundheitsamt namentlich zu melden (§ 6 Absatz 1 Nr 3 des lnfektionsschutzgesetzes • lfSG) Im Falle eines Impfschadens besteht unter den Voraussetzungen des § 60 Absatz 1 lfSG ein Anspruch auf Entschädigung in entsprechender Anwendung der Vorschriften des Bundesversorgungsgesetzes. Der Antrag ist bei der für die Durchführung des Bundesversorgungsgesetzes zuständigen Behörde (§ 64 Absatz 1 lfSG, i.d.R. 'Versorgungsamt') zu stellen. Weitere Auskünfte erteilt das zuständige Gesundheitsamt."/>
-        </note>
-        <note>
-          <text value="leichte Reaktion im Gesicht"/>
-        </note>
-        <protocolApplied>
-          <targetDisease>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="36653000"/>
-              <display value="Rubella (disorder)">
-                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
-                  <extension url="content">
-                    <valueString value="Röteln"/>
-                  </extension>
-                </extension>
-              </display>
-            </coding>
-          </targetDisease>
-          <targetDisease>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="14189004"/>
-              <display value="Measles (disorder)">
-                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
-                  <extension url="content">
-                    <valueString value="Masern"/>
-                  </extension>
-                </extension>
-              </display>
-            </coding>
-          </targetDisease>
-          <targetDisease>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="36989005"/>
-              <display value="Mumps (disorder)">
-                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
-                  <extension url="content">
-                    <valueString value="Mumps"/>
-                  </extension>
-                </extension>
-              </display>
-            </coding>
-          </targetDisease>
-          <doseNumberString>
-            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-              <valueCode value="unknown"/>
-            </extension>
-          </doseNumberString>
-        </protocolApplied>
-      </Immunization>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:e803f224-5eb9-445e-96ff-e65a4e2556bc"/>
-    <resource>
-      <Immunization>
-        <id value="e803f224-5eb9-445e-96ff-e65a4e2556bc"/>
-        <meta>
-          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime|1.1.0"/>
-        </meta>
-        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type">
-          <valueCodeableConcept>
-            <coding>
-              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Technical_Entry_Type"/>
-              <code value="Eduii"/>
-              <display value="Eintrag digital und im Impfausweis"/>
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Attester">
-          <extension url="mode">
-            <valueCodeableConcept>
-              <coding>
-                <system value="http://hl7.org/fhir/composition-attestation-mode"/>
-                <code value="legal"/>
-              </coding>
-            </valueCodeableConcept>
-          </extension>
-          <extension url="party">
-            <valueReference>
-              <reference value="urn:uuid:5a87f811-4d94-4f89-a9be-8b8b1e576342"/>
-            </valueReference>
-          </extension>
-        </extension>
-        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Enterer">
-          <extension url="mode">
-            <valueCodeableConcept>
-              <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
-                <code value="ENT"/>
-              </coding>
-            </valueCodeableConcept>
-          </extension>
-          <extension url="party">
-            <valueReference>
-              <reference value="urn:uuid:5a87f811-4d94-4f89-a9be-8b8b1e576342"/>
-            </valueReference>
-          </extension>
-        </extension>
-        <status value="completed"/>
-        <vaccineCode>
-          <coding>
-            <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
-            <version value="atcgm2021"/>
-            <code value="J07BD52"/>
-            <display value="Sonstige"/>
-          </coding>
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-            <code value="871908002"/>
-            <display value="Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)">
-              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
-                <extension url="content">
-                  <valueString value="Masern, Mumps, Röteln, Varicella-Impfstoff"/>
-                </extension>
-              </extension>
-            </display>
-          </coding>
-          <text value="Masern, Mumps, Röteln (MMR) - Impfstoff) "/>
-        </vaccineCode>
-        <patient>
-          <reference value="urn:uuid:a3bbb84e-4960-4919-8306-9582a560bea9"/>
-        </patient>
-        <occurrenceDateTime value="2021-12-07"/>
-        <primarySource value="true"/>
-        <lotNumber value="AB987"/>
-        <note>
-          <text value="Bei einer ungewöhnlichen Impfreaktion sollte die impfende ärztliche Person benachrichtigt werden. Die ärztlich tätige Person hat, wenn der Verdacht einer gesundheitlichen Schädigung besteht, die über das übliche Ausmaß einer Impfreaktion hinaus geht verpflichtet, den Verdacht dem zuständigen Gesundheitsamt namentlich zu melden (§ 6 Absatz 1 Nr 3 des lnfektionsschutzgesetzes • lfSG) Im Falle eines Impfschadens besteht unter den Voraussetzungen des § 60 Absatz 1 lfSG ein Anspruch auf Entschädigung in entsprechender Anwendung der Vorschriften des Bundesversorgungsgesetzes. Der Antrag ist bei der für die Durchführung des Bundesversorgungsgesetzes zuständigen Behörde (§ 64 Absatz 1 lfSG, i.d.R. 'Versorgungsamt') zu stellen. Weitere Auskünfte erteilt das zuständige Gesundheitsamt."/>
-        </note>
-        <protocolApplied>
-          <targetDisease>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="36653000"/>
-              <display value="Rubella (disorder)">
-                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
-                  <extension url="content">
-                    <valueString value="Röteln"/>
-                  </extension>
-                </extension>
-              </display>
-            </coding>
-          </targetDisease>
-          <targetDisease>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="14189004"/>
-              <display value="Measles (disorder)">
-                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
-                  <extension url="content">
-                    <valueString value="Masern"/>
-                  </extension>
-                </extension>
-              </display>
-            </coding>
-          </targetDisease>
-          <targetDisease>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
-              <code value="36989005"/>
-              <display value="Mumps (disorder)">
-                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
-                  <extension url="content">
-                    <valueString value="Mumps"/>
-                  </extension>
-                </extension>
-              </display>
-            </coding>
-          </targetDisease>
-          <doseNumberString>
-            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-              <valueCode value="unknown"/>
-            </extension>
-          </doseNumberString>
-        </protocolApplied>
-      </Immunization>
     </resource>
   </entry>
 </Bundle>
