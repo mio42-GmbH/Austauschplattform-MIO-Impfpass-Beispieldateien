@@ -91,9 +91,6 @@
 				</meta>
 				<text>
 					<status value="extensions" />
-					<div xmlns="http://www.w3.org/1999/xhtml">
-						<p>TBD</p>
-					</div>
 				</text>
 				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type">
 					<valueCodeableConcept>
@@ -298,9 +295,6 @@
 				</meta>
 				<text>
 					<status value="generated" />
-					<div xmlns="http://www.w3.org/1999/xhtml">
-						<p>Patient: Ludger Königsstein</p>
-					</div>
 				</text>
 				<identifier>
 					<type>
@@ -363,9 +357,6 @@
 				</meta>
 				<text>
 					<status value="extensions" />
-					<div xmlns="http://www.w3.org/1999/xhtml">
-						<p>TBD</p>
-					</div>
 				</text>
 				<status value="final" />
 				<code>
@@ -425,9 +416,6 @@
 				</meta>
 				<text>
 					<status value="extensions" />
-					<div xmlns="http://www.w3.org/1999/xhtml">
-						<p>TBD</p>
-					</div>
 				</text>
 				<clinicalStatus>
 					<coding>
