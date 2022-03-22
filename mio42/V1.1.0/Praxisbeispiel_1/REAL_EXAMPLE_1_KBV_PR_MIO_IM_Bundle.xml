@@ -58,10 +58,6 @@
 				<meta>
 					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Addendum|1.1.0" />
 				</meta>
-				<text>
-					<status value="extensions" />
-
-				</text>
 				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type">
 					<valueCodeableConcept>
 						<coding>
@@ -266,9 +262,6 @@
 				<meta>
 					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0" />
 				</meta>
-				<text>
-					<status value="generated" />
-				</text>
 				<identifier>
 					<type>
 						<coding>

@@ -89,9 +89,6 @@
 				<meta>
 					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime|1.1.0" />
 				</meta>
-				<text>
-					<status value="extensions" />
-				</text>
 				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type">
 					<valueCodeableConcept>
 						<coding>
@@ -293,9 +290,6 @@
 				<meta>
 					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0" />
 				</meta>
-				<text>
-					<status value="generated" />
-				</text>
 				<identifier>
 					<type>
 						<coding>
@@ -355,9 +349,6 @@
 				<meta>
 					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Observation_Immunization_Status|1.1.0" />
 				</meta>
-				<text>
-					<status value="extensions" />
-				</text>
 				<status value="final" />
 				<code>
 					<coding>
@@ -414,9 +405,6 @@
 				<meta>
 					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Condition|1.1.0" />
 				</meta>
-				<text>
-					<status value="extensions" />
-				</text>
 				<clinicalStatus>
 					<coding>
 						<system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
